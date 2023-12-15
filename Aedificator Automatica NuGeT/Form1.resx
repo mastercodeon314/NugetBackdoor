@@ -136,9 +136,30 @@
   </data>
   <data name="powershellScriptBox.Text" xml:space="preserve">
     <value>rm "$env:USERPROFILE\.nuget\packages" -r -force
-Add-Type -AssemblyName PresentationFramework
-[System.Windows.MessageBox]::Show('Hello World')
-Write-Output 'Hello From ps, this nuget package has been RCEd! Microsoft, get pwnd...'</value>
+
+Add-Type @"
+    using System;
+    using System.Runtime.InteropServices;
+
+    public class User32 {
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetForegroundWindow(IntPtr hWnd);
+    }
+"@
+
+Add-Type -AssemblyName System.Windows.Forms
+
+Write-Output 'Hello From PowerShell, this Nuget package has been RCEd! Microsoft, get pwnd....'
+
+# Show the message box
+[Windows.Forms.MessageBox]::Show('Hello From PowerShell, this Nuget package has been RCEd! Microsoft, get pwnd...', 'PwNd Nuget Package', [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)
+
+# Get the handle of the PowerShell process window
+$hWnd = (Get-Process -Id $PID).MainWindowHandle
+
+# Bring the message box to the foreground
+[User32]::SetForegroundWindow($hWnd)</value>
   </data>
   <metadata name="packagesBoxMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

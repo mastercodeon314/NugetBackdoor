@@ -30,6 +30,7 @@ namespace DarkControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buildBtn = new System.Windows.Forms.Button();
             this.folderPathBox = new System.Windows.Forms.TextBox();
@@ -37,14 +38,14 @@ namespace DarkControls
             this.label1 = new System.Windows.Forms.Label();
             this.powershellScriptBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.packagesBoxMenuStrip = new System.Windows.Forms.ContextMenuStrip();
+            this.packagesBoxMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copySelectedPackageFilePathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.iconAnimationTimer = new System.Windows.Forms.Timer();
+            this.iconAnimationTimer = new System.Windows.Forms.Timer(this.components);
             this.progressSpinner1 = new DarkControls.ProgressSpinner();
             this.selectAllBox = new DarkControls.DarkCheckBox();
             this.transparentLabel1 = new DarkControls.TransparentLabel();
@@ -57,7 +58,7 @@ namespace DarkControls
             // 
             this.buildBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buildBtn.Location = new System.Drawing.Point(13, 105);
-            this.buildBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buildBtn.Margin = new System.Windows.Forms.Padding(4);
             this.buildBtn.Name = "buildBtn";
             this.buildBtn.Size = new System.Drawing.Size(100, 28);
             this.buildBtn.TabIndex = 0;
@@ -72,7 +73,7 @@ namespace DarkControls
             this.folderPathBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.folderPathBox.ForeColor = System.Drawing.Color.Silver;
             this.folderPathBox.Location = new System.Drawing.Point(64, 68);
-            this.folderPathBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.folderPathBox.Margin = new System.Windows.Forms.Padding(4);
             this.folderPathBox.Name = "folderPathBox";
             this.folderPathBox.ReadOnly = true;
             this.folderPathBox.Size = new System.Drawing.Size(1103, 22);
@@ -86,7 +87,7 @@ namespace DarkControls
             this.selectFileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.selectFileBtn.Image = ((System.Drawing.Image)(resources.GetObject("selectFileBtn.Image")));
             this.selectFileBtn.Location = new System.Drawing.Point(13, 58);
-            this.selectFileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.selectFileBtn.Margin = new System.Windows.Forms.Padding(4);
             this.selectFileBtn.Name = "selectFileBtn";
             this.selectFileBtn.Size = new System.Drawing.Size(43, 39);
             this.selectFileBtn.TabIndex = 2;
@@ -109,9 +110,10 @@ namespace DarkControls
             this.powershellScriptBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.powershellScriptBox.ForeColor = System.Drawing.Color.Silver;
             this.powershellScriptBox.Location = new System.Drawing.Point(583, 197);
-            this.powershellScriptBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.powershellScriptBox.Margin = new System.Windows.Forms.Padding(4);
             this.powershellScriptBox.Multiline = true;
             this.powershellScriptBox.Name = "powershellScriptBox";
+            this.powershellScriptBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.powershellScriptBox.Size = new System.Drawing.Size(585, 297);
             this.powershellScriptBox.TabIndex = 62;
             this.powershellScriptBox.Text = resources.GetString("powershellScriptBox.Text");
@@ -202,7 +204,7 @@ namespace DarkControls
             this.progressSpinner1.BackColor = System.Drawing.Color.Transparent;
             this.progressSpinner1.LoadGIFImage = global::DarkControls.Properties.Resources.RealFireNugetMaterialRed;
             this.progressSpinner1.Location = new System.Drawing.Point(8, 5);
-            this.progressSpinner1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.progressSpinner1.Margin = new System.Windows.Forms.Padding(5);
             this.progressSpinner1.Name = "progressSpinner1";
             this.progressSpinner1.Size = new System.Drawing.Size(48, 44);
             this.progressSpinner1.TabIndex = 75;
@@ -215,7 +217,7 @@ namespace DarkControls
             this.selectAllBox.CheckColor = System.Drawing.Color.CornflowerBlue;
             this.selectAllBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.selectAllBox.Location = new System.Drawing.Point(8, 166);
-            this.selectAllBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.selectAllBox.Margin = new System.Windows.Forms.Padding(4);
             this.selectAllBox.Name = "selectAllBox";
             this.selectAllBox.Size = new System.Drawing.Size(124, 28);
             this.selectAllBox.TabIndex = 66;
@@ -245,7 +247,7 @@ namespace DarkControls
             this.closeBtn.IconColor = System.Drawing.Color.Black;
             this.closeBtn.IconLineThickness = 2;
             this.closeBtn.Location = new System.Drawing.Point(1127, 0);
-            this.closeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(53, 49);
             this.closeBtn.TabIndex = 7;
@@ -262,7 +264,7 @@ namespace DarkControls
             this.packagesBox.ForeColor = System.Drawing.Color.Silver;
             this.packagesBox.FormattingEnabled = true;
             this.packagesBox.Location = new System.Drawing.Point(13, 197);
-            this.packagesBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.packagesBox.Margin = new System.Windows.Forms.Padding(4);
             this.packagesBox.Name = "packagesBox";
             this.packagesBox.Size = new System.Drawing.Size(561, 291);
             this.packagesBox.TabIndex = 21;
@@ -293,7 +295,7 @@ namespace DarkControls
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Silver;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Aedificator Automatica NuGeT";
             this.packagesBoxMenuStrip.ResumeLayout(false);

@@ -39,9 +39,6 @@
     <ApplicationIcon>Frame 3.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dark Controls Mod">
-      <HintPath>..\Dark Controls Mod\bin\Debug\Dark Controls Mod.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
@@ -129,6 +126,12 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.3</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dark Controls Mod\Dark Controls Mod.csproj">
+      <Project>{68962ecd-d401-48db-8c2a-16e614e8eea6}</Project>
+      <Name>Dark Controls Mod</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Package Backdoorer", "Packa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Controls Mod", "Dark Controls Mod\Dark Controls Mod.csproj", "{68962ECD-D401-48DB-8C2A-16E614E8EEA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aedificator Automatica", "Aedificator Automatica\Aedificator Automatica.csproj", "{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E1D0F93-3984-40A7-B369-D1E4C822E782}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -24,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Packages", "Test Packa
 		Test Packages\selenium.webdriver.4.7.0.nupkg = Test Packages\selenium.webdriver.4.7.0.nupkg
 		Test Packages\serilog.2.12.1-dev-01620.nupkg = Test Packages\serilog.2.12.1-dev-01620.nupkg
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aedificator Automatica NuGeT", "Aedificator Automatica NuGeT\Aedificator Automatica NuGeT.csproj", "{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

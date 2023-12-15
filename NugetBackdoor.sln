@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Package Backdoorer", "Package Backdoorer\Package Backdoorer.csproj", "{5948A5B8-28CF-4B0B-9A41-985356860999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Controls Mod", "Dark Controls Mod\Dark Controls Mod.csproj", "{68962ECD-D401-48DB-8C2A-16E614E8EEA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aedificator Automatica", "Aedificator Automatica\Aedificator Automatica.csproj", "{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E1D0F93-3984-40A7-B369-D1E4C822E782}"
+	ProjectSection(SolutionItems) = preProject
+		Report.md = Report.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Packages", "Test Packages", "{EFF07032-B2FC-4B6B-B36D-841DFD1B0F92}"
+	ProjectSection(SolutionItems) = preProject
+		Test Packages\castle.core.5.1.0.nupkg = Test Packages\castle.core.5.1.0.nupkg
+		Test Packages\htmlagilitypack.1.11.46.nupkg = Test Packages\htmlagilitypack.1.11.46.nupkg
+		Test Packages\moq.4.18.3.nupkg = Test Packages\moq.4.18.3.nupkg
+		Test Packages\newtonsoft.json.13.0.2.nupkg = Test Packages\newtonsoft.json.13.0.2.nupkg
+		Test Packages\selenium.webdriver.4.7.0.nupkg = Test Packages\selenium.webdriver.4.7.0.nupkg
+		Test Packages\serilog.2.12.1-dev-01620.nupkg = Test Packages\serilog.2.12.1-dev-01620.nupkg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5948A5B8-28CF-4B0B-9A41-985356860999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5948A5B8-28CF-4B0B-9A41-985356860999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5948A5B8-28CF-4B0B-9A41-985356860999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5948A5B8-28CF-4B0B-9A41-985356860999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68962ECD-D401-48DB-8C2A-16E614E8EEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68962ECD-D401-48DB-8C2A-16E614E8EEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68962ECD-D401-48DB-8C2A-16E614E8EEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68962ECD-D401-48DB-8C2A-16E614E8EEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EFF07032-B2FC-4B6B-B36D-841DFD1B0F92} = {3E1D0F93-3984-40A7-B369-D1E4C822E782}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD74A141-634C-473D-A641-4C3587C6D26E}
+	EndGlobalSection
+EndGlobal

@@ -22,7 +22,7 @@ As of writing this, the exploit still works on the latest version of Visual Stud
 Submission of the report of this vuln to Microsoft on Jan 2nd, 2023:
 ![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/d85dbb8a-2deb-4cb5-9e82-1e9803dc74e0)
 
-Microsoft's Response to the report on Jan 6th, 2023:Readme fixes
+Microsoft's Response to the report on Jan 6th, 2023:
 ![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/7f8335fd-17e8-4c0f-9dce-03f32fcc5318)
 
 Vulnerability Demo:

@@ -1,8 +1,5 @@
 # NugetBackdoor
 
-Submission of the report of this vuln to Microsoft:
-![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/d85dbb8a-2deb-4cb5-9e82-1e9803dc74e0)
-
 # Summary
 A critical RCE in the NuGet package manager where individual nuget packages can be infected with malware.
     
@@ -22,8 +19,10 @@ I learned of this vulnability back in the summer of 2022. It wasnt until January
 As of writing this, the exploit still works on the latest version of Visual Studio 2022 Enterprise, 17.8.3, and its  been almost a year since i reported this to Microsoft. I have decided to pubicly disclose this in hopes that the report will gain validation one day and this very problematic issue is fixed. Its always very dissapointing when companies take the secuirty of their products as not a concern, and this time its Microsoft. 
 ![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/424154f7-c3fd-4e31-ab99-0ea8dc6e3063)
 
+Submission of the report of this vuln to Microsoft on Jan 2nd, 2023:
+![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/d85dbb8a-2deb-4cb5-9e82-1e9803dc74e0)
 
-Microsoft's Response to the report:
+Microsoft's Response to the report on Jan 6th, 2023:Readme fixes
 ![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/7f8335fd-17e8-4c0f-9dce-03f32fcc5318)
 
 Vulnerability Demo:

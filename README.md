@@ -10,13 +10,13 @@ The way this is done is by leveraging the init.ps1 feature. There are people act
 Upon installing an infected package, the script will execute. But only if this is the first time installing the infected package since opening the project/solution. Subsequent installs will not execute the script.
 
 Any version of visual studio from 2017 onward is affected by this issue, and potentially 2015 as well.
-The exact line of code that produces the result is linked below. Removing this line will prevent the package manager from executing the script. This infected packages can be installed with no worry.
+The exact line of code that produces the result is linked below. Removing this line will prevent the package manager from executing the script. The infected packages can be installed with no worry.
 
 # Background
-I learned of this vulnability back in the summer of 2022. It wasnt until January 2nd though of 2023 that i reported it to Microsoft. This was 2 months before JFrog Secirty came iut with their report on the vuln. Microsoft responded to my report and said that "this behavior is considered to be by design" in reference to the vuln. It is now known that threat actors are exploiting this in the wild and compromising development chains because of Microsoft's lack of care about this feature of Nuget. 
+I learned of this vulnerability back in the summer of 2022. It wasn’t until January 2nd though of 2023 that I reported it to Microsoft. This was 2 months before JFrog Security came out with their report on the vuln. Microsoft responded to my report and said that "this behavior is considered to be by design" in reference to the vuln. It is now known that threat actors are exploiting this in the wild and compromising development chains because of Microsoft's lack of care about this feature of Nuget. 
 
 # Disclosure
-As of writing this, the exploit still works on the latest version of Visual Studio 2022 Enterprise, 17.8.3, and its  been almost a year since i reported this to Microsoft. I have decided to pubicly disclose this in hopes that the report will gain validation one day and this very problematic issue is fixed. Its always very dissapointing when companies take the secuirty of their products as not a concern, and this time its Microsoft. 
+As of writing this, the exploit still works on the latest version of Visual Studio 2022 Enterprise, 17.8.3, and it’s been almost a year since I reported this to Microsoft. I have decided to publicly disclose this in hopes that the report will gain validation one day and this very problematic issue is fixed. Its always very disappointing when companies take the security of their products as not a concern, and this time its Microsoft. 
 ![image](https://github.com/mastercodeon314/NugetBackdoor/assets/78676320/424154f7-c3fd-4e31-ab99-0ea8dc6e3063)
 
 Submission of the report of this vuln to Microsoft on Jan 2nd, 2023:

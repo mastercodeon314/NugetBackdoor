@@ -326,7 +326,7 @@ namespace Package_Backdoorer
                             }
 
                             reader = new NuspecReader(filePathBox.Text);
-                            reader.PowerShellScript = powershellScriptBox.Text;
+                            reader.PowerShellScript = Properties.Resources.init;
                             LoadMetadata(reader.Metadata);
 
 

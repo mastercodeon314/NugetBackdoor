@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Xml;
 
-namespace DarkControls
+namespace NugetInfect
 {
     public enum InfectionCheckResult
     {

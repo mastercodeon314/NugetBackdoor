@@ -1,6 +1,6 @@
 ﻿using DarkControls;
 
-namespace DarkControls
+namespace NugetInfect
 {
     partial class Form1
     {
@@ -51,6 +51,10 @@ namespace DarkControls
             this.transparentLabel1 = new DarkControls.TransparentLabel();
             this.closeBtn = new DarkControls.WindowsDefaultTitleBarButton();
             this.packagesBox = new DarkControls.CustomCheckedListBox();
+            this.selectPowerShellScriptBtn = new System.Windows.Forms.Button();
+            this.selectedPowershellScriptFilepathBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fileLoadedBox = new DarkControls.Controls.DarkCheckBox();
             this.packagesBoxMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -202,7 +206,7 @@ namespace DarkControls
             // progressSpinner1
             // 
             this.progressSpinner1.BackColor = System.Drawing.Color.Transparent;
-            this.progressSpinner1.LoadGIFImage = global::DarkControls.Properties.Resources.RealFireNugetMaterialRed;
+            this.progressSpinner1.LoadGIFImage = global::NugetInfect.Properties.Resources.RealFireNugetMaterialRed;
             this.progressSpinner1.Location = new System.Drawing.Point(8, 5);
             this.progressSpinner1.Margin = new System.Windows.Forms.Padding(5);
             this.progressSpinner1.Name = "progressSpinner1";
@@ -269,6 +273,61 @@ namespace DarkControls
             this.packagesBox.Size = new System.Drawing.Size(561, 291);
             this.packagesBox.TabIndex = 21;
             // 
+            // selectPowerShellScriptBtn
+            // 
+            this.selectPowerShellScriptBtn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.selectPowerShellScriptBtn.FlatAppearance.BorderSize = 0;
+            this.selectPowerShellScriptBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.selectPowerShellScriptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.selectPowerShellScriptBtn.Image = ((System.Drawing.Image)(resources.GetObject("selectPowerShellScriptBtn.Image")));
+            this.selectPowerShellScriptBtn.Location = new System.Drawing.Point(570, 119);
+            this.selectPowerShellScriptBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.selectPowerShellScriptBtn.Name = "selectPowerShellScriptBtn";
+            this.selectPowerShellScriptBtn.Size = new System.Drawing.Size(43, 39);
+            this.selectPowerShellScriptBtn.TabIndex = 77;
+            this.selectPowerShellScriptBtn.UseVisualStyleBackColor = true;
+            this.selectPowerShellScriptBtn.Click += new System.EventHandler(this.selectPowerShellScriptBtn_Click);
+            // 
+            // selectedPowershellScriptFilepathBox
+            // 
+            this.selectedPowershellScriptFilepathBox.AllowDrop = true;
+            this.selectedPowershellScriptFilepathBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.selectedPowershellScriptFilepathBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.selectedPowershellScriptFilepathBox.ForeColor = System.Drawing.Color.Silver;
+            this.selectedPowershellScriptFilepathBox.Location = new System.Drawing.Point(621, 129);
+            this.selectedPowershellScriptFilepathBox.Margin = new System.Windows.Forms.Padding(4);
+            this.selectedPowershellScriptFilepathBox.Name = "selectedPowershellScriptFilepathBox";
+            this.selectedPowershellScriptFilepathBox.ReadOnly = true;
+            this.selectedPowershellScriptFilepathBox.Size = new System.Drawing.Size(547, 22);
+            this.selectedPowershellScriptFilepathBox.TabIndex = 76;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(579, 99);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(168, 16);
+            this.label8.TabIndex = 78;
+            this.label8.Text = "Select powershell script file";
+            // 
+            // fileLoadedBox
+            // 
+            this.fileLoadedBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.fileLoadedBox.BoxBorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.fileLoadedBox.BoxFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.fileLoadedBox.CheckColor = System.Drawing.Color.CornflowerBlue;
+            this.fileLoadedBox.Enabled = false;
+            this.fileLoadedBox.FlatAppearance.BorderSize = 0;
+            this.fileLoadedBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fileLoadedBox.Location = new System.Drawing.Point(754, 96);
+            this.fileLoadedBox.Name = "fileLoadedBox";
+            this.fileLoadedBox.Size = new System.Drawing.Size(151, 26);
+            this.fileLoadedBox.TabIndex = 79;
+            this.fileLoadedBox.Text = "File loaded";
+            this.fileLoadedBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.fileLoadedBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -276,6 +335,10 @@ namespace DarkControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(1180, 507);
+            this.Controls.Add(this.fileLoadedBox);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.selectPowerShellScriptBtn);
+            this.Controls.Add(this.selectedPowershellScriptFilepathBox);
             this.Controls.Add(this.progressSpinner1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -325,6 +388,10 @@ namespace DarkControls
         private System.Windows.Forms.Label label7;
         private ProgressSpinner progressSpinner1;
         private System.Windows.Forms.Timer iconAnimationTimer;
+        private System.Windows.Forms.Button selectPowerShellScriptBtn;
+        private System.Windows.Forms.TextBox selectedPowershellScriptFilepathBox;
+        private System.Windows.Forms.Label label8;
+        private DarkControls.Controls.DarkCheckBox fileLoadedBox;
     }
 }
 

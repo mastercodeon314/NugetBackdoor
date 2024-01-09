@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace DarkControls
+namespace NugetInfect
 {
     public partial class Form1 : Form
     {
@@ -271,7 +271,14 @@ namespace DarkControls
 
                     if (reader != null)
                     {
-                        reader.Build(packagePath, Properties.Settings.Default.PowershellScript);
+                        if (fileLoadedBox.Checked)
+                        {
+                            reader.Build(packagePath, File.ReadAllText(selectedPowershellScriptFilepathBox.Text));
+                        }
+                        else
+                        {
+                            reader.Build(packagePath, powershellScriptBox.Text);
+                        }
                     }
                 }
 
@@ -350,6 +357,10 @@ namespace DarkControls
 
             if (reader != null)
             {
+                if (powershellScriptBox.Text == "Powershell script file content selected...")
+                {
+                    return;
+                }
                 reader.PowerShellScript = powershellScriptBox.Text;
             }
         }
@@ -398,6 +409,33 @@ namespace DarkControls
             else
             {
                 iconIdx++;
+            }
+        }
+
+        private void selectPowerShellScriptBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Set the title of the dialog
+            openFileDialog.Title = "Open File";
+
+            // Set the initial directory (optional)
+            openFileDialog.InitialDirectory = Path.GetDirectoryName(Application.ExecutablePath);
+
+            // Set the file filter using PowerShell filter syntax
+            openFileDialog.Filter = "PowerShell Script Files|*.ps1|All Files|*.*";
+
+            // Show the dialog and check if the user clicked OK
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Get the selected file path
+                string selectedFilePath = openFileDialog.FileName;
+
+                selectedPowershellScriptFilepathBox.Text = selectedFilePath;
+
+                powershellScriptBox.Text = "Powershell script file content selected...";
+
+                fileLoadedBox.Checked = true;
             }
         }
     }

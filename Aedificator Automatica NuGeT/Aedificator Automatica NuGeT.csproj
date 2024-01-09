@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3E3A0FFD-CFBE-4245-BF21-57E8FCBA37E5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DarkControls</RootNamespace>
+    <RootNamespace>NugetInfect</RootNamespace>
     <AssemblyName>Aedificator Automatica NuGeT</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -39,6 +39,9 @@
     <ApplicationIcon>Icon Real Frame 1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DarkControls">
+      <HintPath>..\..\BrightnessSlider\BrightnessSlider\DarkControls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />

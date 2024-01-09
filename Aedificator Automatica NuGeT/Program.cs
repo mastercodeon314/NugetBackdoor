@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DarkControls
+namespace NugetInfect
 {
     internal static class Program
     {

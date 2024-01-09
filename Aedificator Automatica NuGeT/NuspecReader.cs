@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace DarkControls
+namespace NugetInfect
 {
     public class NuspecReader
     {
